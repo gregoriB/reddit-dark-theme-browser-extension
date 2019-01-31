@@ -1,0 +1,255 @@
+* {
+  background-color: transparent !important;
+  color: #ddd !important;
+  border-color: #777 !important;
+  text-shadow: none !important;
+}
+
+body {
+  background-color: black !important;
+  background: black !important;
+}
+
+code {
+  background-color: #222 !important;
+}
+
+pre {
+  background-color: #222 !important;
+}
+
+div {
+  background-color: transparent !important;
+}
+
+div.comment {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+div.comments-page div.comment {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+div.comment:nth-of-type(odd) {
+  background-color: #222 !important;
+}
+
+div#sr-header-area {
+  background-color: #222 !important;
+}
+
+div#header > div#sr-header-area a {
+  color: #ddd !important;
+}
+
+div#header > div#sr-header-area a:hover {
+  color: #fff !important;
+}
+
+div#sr-header-area {
+  background-color: #222 !important;
+}
+
+.drop-choices.inuse {
+  background-color: #222 !important;
+  border: 1px solid #ddd !important;
+}
+
+#header {
+  background-color: #222 !important;
+}
+
+.thing {
+  margin: .5rem !important;
+  background-color: #222 !important;
+  background: transparent !important;
+  padding: .5rem !important;
+}
+
+.thing.stickied {
+  background-color: #333 !important;
+}
+
+.thing.stickied.link a.title {
+  color: #09f !important;
+}
+
+.thing.stickied.link a.title:visited {
+  color: #56d !important;
+}
+
+.thing.link a.title {
+  color: #09f !important;
+}
+
+.thing.link a.title:visited {
+  color: #56d !important;
+}
+
+html body.listing-page .link {
+  background: transparent !important;
+  background-color: #222 !important;
+}
+
+html body.listing-page .linklisting .thing.stickied {
+  background: none !important;
+  background-color: #444 !important;
+}
+
+html body.listing-page .linklisting .thing.stickied a.title{
+  color: #1af !important;
+}
+
+textarea {
+  background-color: #222 !important;
+}
+
+button {
+  background-color: #333 !important;
+}
+
+/* front page left side bar */
+.global li {
+  background-color: #222 !important;
+}
+
+.multis li {
+  background-color: #222 !important;
+}
+
+.other li {
+  background-color: #222 !important;
+}
+/* end front page left side bar */
+
+div.side {
+  background-color: #333 !important;
+  background: #333 !important;
+}
+
+a {
+  color: #ddd !important;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+.child {
+  background-color: #555 !important;
+}
+
+.side .titlebox h1.redditname:before {
+  background-color: #333 !important;
+}
+
+.hover {
+  color: #ddd !important;
+}
+
+div.commentarea {
+  background-color: #333 !important;
+}
+
+div.commentarea > .usertext {
+  background: none !important;
+  background-color: #333 !important;
+}
+
+div.commentarea >.usertext textarea {
+  background: #222 !important;
+  background-color: #222 !important;
+}
+
+div.modal-body {
+  background-color: #333 !important;
+}
+
+.morelink {
+  background: transparent !important;
+}
+
+.morelink .nub {
+  background: transparent !important;
+}
+
+/* r/todayilearned */
+div.side * {
+  background-color: #333 !important;
+}
+
+div.side .usertext-body ol {
+  background-color: #222 !important;
+}
+
+div.side .usertext-body ul {
+  background-color: #222 !important;
+}
+
+div.linkinfo {
+  background-color: #222 !important;
+}
+
+span.subscribers {
+  background-color: #333 !important;
+}
+
+p.users-online {
+  background-color: #333 !important;
+}
+
+div.titlebox form.flairtoggle {
+  background-color: #333 !important;
+}
+
+div.sidecontentbox {
+  background-color: #222 !important;
+}
+/* end r/todayilearned */
+
+/* profile page stuff */
+div.CommentListing__comment {
+  background-color: #222 !important;
+}
+
+div.Post__content {
+  background-color: #222 !important;
+}
+
+div.Post__top {
+  background-color: #333 !important;
+}
+
+nav.ProfileBarDropdown__list {
+  background-color: #333 !important;
+}
+/* end profile page stuff */
+
+/* r/news */
+form#search > * {
+  background: transparent !important;
+  background-color: #333 !important;
+}
+
+div.side div.md p > a[href="http://www.reddit.com/r/inthenews/submit"] {
+  background: transparent !important;
+}
+
+div.side div.md p > a[href="http://www.reddit.com/r/news/submit"] {
+  background: transparent !important;
+}
+
+div.side div.md p > a[href="http://www.reddit.com/r/misc/submit"] {
+  background: transparent !important;
+}
+/* end r/news */
+
+div.content:before {
+  background: transparent !important;
+}
+
+body > .content {
+  background: transparent !important;
+}
