@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Reddit Dark Theme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A very simple dark theme for the old reddit layout",
 
   "content_scripts": [
