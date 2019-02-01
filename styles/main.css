@@ -141,7 +141,7 @@ div.modal-body {
 /* things */
 /* "thing" is what they call threads listed on a main sub page or the reddit home page */
 .thing {
-  margin: .5rem !important;
+  margin: .5rem 0 !important;
   background-color: var(--x-dark) !important;
   background: var(--x-dark) !important;
   padding: .5rem !important;
@@ -250,12 +250,19 @@ div.link {
   background-color: var(--dark) !important;
 }
 
-body div.side {
-  border: 1px solid var(--medium-light);
-  padding: 1rem !important;
-  background-color: var(--dark) !important;
-  background: var(--dark) !important;
-}
+  /* div.side  and #siteTable have a relationship in javascript.  Don't alter this data without understanding how that works */
+  #siteTable {
+    margin-left: 10px !important;
+  }
+
+  body div.side {
+    margin-left: 0 !important;
+    border: 1px solid var(--medium-light);
+    padding: 1rem !important;
+    background-color: var(--dark) !important;
+    background: var(--dark) !important;
+  }
+  /*  */
 
 body div.side * {
   background-color: transparent !important;

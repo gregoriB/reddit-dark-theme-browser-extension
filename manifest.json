@@ -8,6 +8,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.reddit.com/*", "https://old.reddit.com/*"],
+      "js": ["scripts.js"],
       "css": [
         "/styles/variables.css", 
         "/styles/main.css", 
