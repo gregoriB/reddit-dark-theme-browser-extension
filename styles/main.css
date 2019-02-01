@@ -271,6 +271,10 @@ body div.side .usertext-body ul {
   background-color: var(--dark) !important;
 }
 
+div.side .md ol:nth-of-type(1) li blockquote {
+  background-color: var(--medium-dark) !important;
+}
+
 div.linkinfo {
   background-color: var(--dark) !important;
   background: var(--dark) !important;
