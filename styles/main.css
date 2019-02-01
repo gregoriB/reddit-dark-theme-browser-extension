@@ -1,5 +1,5 @@
 /* 
-  notes and guidelines:
+  notes and guidelines. READ BEFORE CONTRIBUTING:
 
   * Reddit uses '!important' quite a bit, so just add it to the end of the property to be safe.
   * Because of this overuse of !important, specifity is also important. 
@@ -11,6 +11,8 @@
   * Only variables should be used for the colors.  Exceptions should be rare.
   * The variable values work well and shouldn't be changed.
   * Keep the contrast high enough so no one needs to struggle to read anything.
+  * Try to leave helpful comments.  
+  * When you commit and make pull requests, be descriptive of the issue and say which subreddit you used to test it.
 
 */
 
