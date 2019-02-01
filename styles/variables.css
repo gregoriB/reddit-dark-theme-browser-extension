@@ -1,0 +1,13 @@
+/* our color variables.  do not alter */
+
+:root {
+  --xx-light: #ddd;
+  --x-light: #b8b8b8;
+  --light: #aaa;
+  --medium-light: #999;
+  --medium: #777;
+  --medium-dark: #555;
+  --dark: #333;
+  --x-dark: #222;
+  --xx-dark: #181818;
+}

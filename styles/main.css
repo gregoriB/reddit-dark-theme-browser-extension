@@ -1,0 +1,354 @@
+/* 
+  notes and guidelines:
+
+  * Reddit uses '!important' quite a bit, so just add it to the end of the property to be safe.
+  * Because of this overuse of !important, specifity is also important. 
+  * Something as simple as adding an element name before a class(ie 'div.side' instead of '.side') can be all you need to override the default CSS.
+  * Old Reddit is a mess when it comes to element use and layouts and cohesive class and id names.
+  * CSS made for a specific subreddit and not being used by other subs should go in its own file and be added to manifest.json.
+  * Things should be grouped to together if they are related.  
+  * Large sections can go in their own CSS file and be added to manifest.json accordingly, but this should only be done if it doesn't make things harder to find 
+  * Only variables should be used for the colors.  Exceptions should be rare.
+  * The variable values work well and shouldn't be changed.
+  * Keep the contrast high enough so no one needs to struggle to read anything.
+
+*/
+
+/* our default behavior.  do not add "background" to this, as that would break many images.  "background" needs to be dealt with on a case-by-case basis*/
+* {
+  background-color: transparent !important;
+  color: var(--xx-light) !important;
+  border-color: var(--medium-light) !important;
+  text-shadow: none !important;
+}
+/*  */
+
+/* basics element selectors */
+html body {
+  background-color: black !important;
+  background: black !important;
+}
+
+a {
+  color: var(--xx-light) !important;
+}
+
+a:hover {
+  color: white !important;
+}
+
+code {
+  background-color: var(--dark) !important;
+}
+
+pre {
+  background-color: var(--dark) !important;
+}
+
+div {
+  background-color: transparent !important;
+}
+
+textarea {
+  background-color: var(--dark) !important;
+}
+
+button {
+  background-color: var(--medium-dark) !important;
+}
+
+input[type=text] {
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+}
+/*  */
+
+div.content:before {
+  background: transparent !important;
+}
+
+body > .content {
+  background: transparent !important;
+}
+
+span.flair {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+span.linkflairlabel {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* header stuff */
+div#header {
+  background-color: var(--dark) !important;
+}
+
+div#header:after {
+  background-color: var(--dark) !important;
+  background: transparent !important;
+}
+
+div#sr-header-area {
+  background-color: var(--dark) !important;
+  background: transparent !important;
+}
+
+div#header > div#sr-header-area a {
+  color: var(--xx-light) !important;
+}
+
+div#header > div#sr-header-area a:hover {
+  color: white !important;
+}
+
+div#sr-header-area {
+  background-color: var(--dark) !important;
+}
+
+#header-bottom-right {
+  background-color: #33333388 !important;  /* variable exception made for alpha */
+}
+
+.drop-choices.inuse {
+  background-color: var(--dark) !important;
+  border: 1px solid var(--xx-light) !important;
+}
+
+/* subreddit name */
+.redditname a {
+  text-shadow: 2px 2px black !important;
+}
+/*  */
+
+/* user bar */
+.user * {
+  color: var(--xx-light) !important;
+  text-shadow: 1px 1px black !important;
+}
+/*  */
+
+/* modal that comes up when reporting stuff */
+div.modal-body {
+  background-color: var(--medium-dark) !important;
+}
+/*  */
+
+/* things */
+/* "thing" is what they call threads listed on a main sub page or the reddit home page */
+.thing {
+  margin: .5rem !important;
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+  padding: .5rem !important;
+}
+
+.thing.stickied {
+  background-color: var(--dark) !important;
+}
+
+  /* unique colors used just for this */
+  .thing.stickied.link a.title {
+    color: #09f !important;
+  }
+
+  .thing.stickied.link a.title:visited {
+    color: #56d !important;
+  }
+
+  .thing.link a.title {
+    color: #09f !important;
+  }
+
+  .thing.link a.title:visited {
+    color: #56d !important;
+  }
+  /*  */
+
+html body.listing-page .linklisting .thing.stickied a.title{
+  color: #1af !important;
+}
+
+html body.listing-page .link {
+  background: transparent !important;
+  background-color: var(--dark) !important;
+}
+
+html body.listing-page .linklisting .thing.stickied {
+  background: transparent !important;
+  background-color: var(--medium-dark) !important;
+}
+/*  */
+
+/* front page left side bar */
+.global li {
+  background-color: var(--dark) !important;
+}
+
+.multis li {
+  background-color: var(--dark) !important;
+}
+
+.other li {
+  background-color: var(--dark) !important;
+}
+/*  */
+
+/* right side bar stuff */
+
+  /* subscribe button*/
+  span.subscribe-button a.add {
+    background: green !important;
+    background-color:  green !important;
+  }
+
+  span.subscribe-button .active {
+    background: #a00 !important;
+    background-color: #a00 !important;
+  }
+  /*  */
+
+form#search > * {
+  background: transparent !important;
+  background-color: var(--xx-dark) !important;
+}
+
+div p.users-online {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+  /* buttons */
+  div div.morelink {
+    background: var(--medium-dark) !important;
+  }
+
+  div div.morelink .nub {
+    background: transparent !important;
+  }
+  /*  */
+
+.side .titlebox h1.redditname:before {
+  background-color: var(--medium-dark) !important;
+  background: transparent !important;
+}
+
+.side .titlebox h1.redditname:after {
+  background-color: var(--medium-dark) !important;  
+  background: transparent !important;
+}
+
+.side .titlebox h1.redditname {
+  background-color: var(--medium-dark) !important;
+  background: transparent !important;
+}
+
+div.link {
+  background-color: var(--dark) !important;
+}
+
+body div.side {
+  border: 1px solid var(--medium-light);
+  padding: 1rem !important;
+  background-color: var(--dark) !important;
+  background: var(--dark) !important;
+}
+
+body div.side * {
+  background-color: transparent !important;
+}
+
+body div.side div.usertext-body ul {
+  background-color: transparent !important;
+}
+
+body div.side .usertext-body ol {
+  background-color: var(--dark) !important;
+}
+
+body div.side .usertext-body ul {
+  background-color: var(--dark) !important;
+}
+
+div.linkinfo {
+  background-color: var(--dark) !important;
+  background: var(--dark) !important;
+}
+
+span.subscribers {
+  background-color: transparent !important;
+}
+
+div.titlebox form.flairtoggle {
+  background-color: transparent !important;
+}
+
+div.sidecontentbox {
+  background-color: var(--x-dark) !important;
+  background: transparent !important;
+}
+/*  */
+
+/* profile page stuff */
+div.CommentListing__comment {
+  background-color: var(--dark) !important;
+}
+
+div.Post__content {
+  background-color: var(--dark) !important;
+}
+
+div.Post__top {
+  background-color: var(--medium-dark) !important;
+}
+
+nav.ProfileBarDropdown__list {
+  background-color: var(--medium-dark) !important;
+}
+
+div.SubredditListDropdown * {
+  background-color: var(--dark) !important;
+}
+
+div.StyledHtml div.md * {
+  background-color: transparent !important;
+}
+/*  */
+
+/* form banner and ads causing conflicts, so they go bye bye */
+form.premium-banner {
+  visibility: hidden !important; /* using visibility instead of diplay because 'display:none' messes things up */
+}
+
+div.ad-container {
+  display: none !important;
+}
+/*  */
+
+/* universal but made in r/tifu */
+div.link div.entry {
+  background: transparent !important;
+}
+
+div.link .usertext-body .md {
+  padding: 1rem !important;
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+}
+
+div.md * {
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+}
+
+div.md h2:before {
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+}
+
+div.titlebox form.toggle {
+  background-color: var(--x-dark) !important;
+  background: var(--x-dark) !important;
+}
+/*  */

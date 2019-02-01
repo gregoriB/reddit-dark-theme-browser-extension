@@ -1,0 +1,61 @@
+/* video player */
+div.centered button {
+  background-color: transparent !important;
+}
+
+.playback-controls {
+  background-color: var(--medium-dark) !important;
+}
+
+.control-button {
+  background-color: transparent !important;
+}
+
+.control-button * {
+  background-color: transparent !important;
+}
+
+.video-settings-container {
+  background-color: var(--dark) !important;
+}
+
+.volume-slider-container {
+  background-color: var(--dark) !important;
+}
+
+.volume-slider-track {
+  background-color: var(--medium-dark) !important;
+}
+
+.volume-slider-progress {
+  background-color: white !important;
+}
+
+.volume-slider-thumb {
+  background-color: white !important;
+}
+
+.reddit-video-seek-bar-root {
+  background-color: transparent !important;
+}
+
+.seek-bar-progress {
+  background-color: white !important;
+}
+
+.seek-bar-buffered {
+  background-color: var(--xx-dark) !important;
+}
+
+.seek-bar-lookahead {
+  background-color: var(--dark) !important;
+}
+
+.seek-bar-background {
+  background-color: #ccc !important;
+}
+
+.seek-bar-thumb {
+  background-color: white !important;
+}
+/*  */

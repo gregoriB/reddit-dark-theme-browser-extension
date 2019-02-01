@@ -1,0 +1,62 @@
+/* comments */
+div.commentarea {
+  background-color: var(--dark) !important;
+  background: var(--dark) !important;
+}
+
+div.commentarea > .usertext {
+  background: transparent !important;
+  background-color: var(--dark) !important;
+}
+
+div.commentarea >.usertext textarea {
+  background: var(--xx-dark) !important;
+  background-color: var(--xx-dark) !important;
+}
+
+div.commentarea div.comment {
+  border: 1px solid var(--medium-light);
+  background-color: var(--dark) !important;
+}
+
+div.commentarea div.comment * {
+  background-color: var(--dark) !important;
+}
+
+div.child {
+  background-color: var(--medium) !important;
+}
+
+/* sometimes nested comments stack CSS elements as they go deeper. it's really odd, and this is my solution for the time being */
+div.commentarea div.comment div.child div div.comment {
+  background-color: var(--x-dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment * {
+  background-color: var(--x-dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment {
+  background-color: var(--dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment * {
+  background-color: var(--dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment div.child div div.comment {
+  background-color: var(--x-dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment div.child div div.comment * {
+  background-color: var(--x-dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment div.child div div.comment div.child div div.comment {
+  background-color: var(--dark) !important;
+}
+
+div.commentarea div.comment div.child div div.comment div.child div div.comment div.child div div.comment div.child div div.comment * {
+  background-color: var(--dark) !important;
+}
+/*  */
