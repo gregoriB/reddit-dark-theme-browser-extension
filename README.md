@@ -1,6 +1,9 @@
 #
 # Old Reddit Dark Mode
+
 Changes the old reddit layout to a dark theme.
+
+![](https://i.imgur.com/1362e57.png)
 
 ## Installation
 
