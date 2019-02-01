@@ -141,6 +141,7 @@ div.modal-body {
 /* things */
 /* "thing" is what they call threads listed on a main sub page or the reddit home page */
 .thing {
+  width: 99% !important;
   margin: .5rem 0 !important;
   background-color: var(--x-dark) !important;
   background: var(--x-dark) !important;
