@@ -1,4 +1,14 @@
 /* comments */
+div.comment.gilded {
+  background: transparent !important;
+  background-color: var(--dark) !important;
+}
+
+div.comment.gilded * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
 div.commentarea {
   background-color: var(--dark) !important;
   background: var(--dark) !important;

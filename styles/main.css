@@ -47,10 +47,6 @@ pre {
   background-color: var(--dark) !important;
 }
 
-div {
-  /* background-color: transparent !important; */
-}
-
 textarea {
   background-color: var(--dark) !important;
 }
@@ -67,7 +63,6 @@ input[type=text] {
 
 div.content {
   min-width: 70% !important;
-  margin-right: 0 !important;
   background: transparent !important;
 }
 

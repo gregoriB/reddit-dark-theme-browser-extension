@@ -1,0 +1,10 @@
+body.wiki-page div.content {
+  padding: 1rem !important;
+  background: var(--dark) !important;
+  background-color: var(--dark) !important;
+}
+
+body.wiki-page div.content * {
+  background: transparent !important;
+  background-color: transparent !important;
+}

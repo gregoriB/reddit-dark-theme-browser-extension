@@ -2,19 +2,20 @@
   "manifest_version": 2,
 
   "name": "Reddit Dark Theme",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A very simple dark theme for the old reddit layout",
 
   "content_scripts": [
     {
       "matches": ["https://www.reddit.com/*", "https://old.reddit.com/*"],
-      "js": ["scripts.js"],
       "css": [
         "/styles/variables.css", 
         "/styles/main.css", 
         "/styles/video-player.css", 
-        "/styles/comments.css"
-      ]
+        "/styles/comments.css",
+        "/styles/wiki.css"
+      ],
+      "js": ["scripts.js"]
     }
   ],
 
