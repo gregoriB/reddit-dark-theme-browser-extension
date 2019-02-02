@@ -88,7 +88,17 @@ span.linkflairlabel {
   background-color: transparent !important;
 }
 
+body div.hover-bubble {
+  background: var(--medium-dark) !important;
+  background-color: var(--medium-dark) !important;
+}
+
 /* header stuff */
+div#header .tabmenu li.selected a {
+  background: var(--medium-dark) !important;
+  background-color: var(--medium-dark) !important;
+}
+
 div#header {
   background-color: var(--dark) !important;
 }
@@ -119,9 +129,23 @@ div#sr-header-area {
   background-color: #33333388 !important;  /* variable exception made for alpha */
 }
 
+div div#sr-header-area .drop-choices.srdrop {
+  background-color: var(--dark) !important;
+  background: var(--dark) !important;
+  border: 1px solid var(--xx-light) !important;
+}
+
 .drop-choices.inuse {
   background-color: var(--dark) !important;
   border: 1px solid var(--xx-light) !important;
+}
+
+.drop-choices.inuse a.choice {
+  color: var(--light) !important;
+}
+
+.drop-choices.inuse a.choice:hover {
+  color: white !important;
 }
 
 /* subreddit name */
