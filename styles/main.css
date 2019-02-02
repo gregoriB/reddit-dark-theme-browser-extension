@@ -48,7 +48,7 @@ pre {
 }
 
 div {
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
 }
 
 textarea {
@@ -67,6 +67,7 @@ input[type=text] {
 
 div.content {
   min-width: 70% !important;
+  margin-right: 0 !important;
   background: transparent !important;
 }
 

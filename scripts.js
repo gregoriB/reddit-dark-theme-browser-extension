@@ -3,7 +3,12 @@ const linklisting = document.querySelector('.linklisting');
 
 // fixes issue with some subs having threads that overlap the side panel
 const fixSiteTableWidth = () => {
-  linklisting.setAttribute('style', `max-width: ${window.innerWidth - sidePanel.offsetWidth - 48}px !important`);
+  const extraGap = 15;
+  linklisting.setAttribute('style', (
+    `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
+    `margin-right: ${sidePanel.offsetWidth + extraGap}px`
+    )
+  );
 }
 
 fixSiteTableWidth();
