@@ -1,7 +1,8 @@
 const sidePanel = document.querySelector('.side');
 const linklisting = document.querySelector('.linklisting');
 const wiki = document.querySelector('.wiki-page');
-const content = document.querySelector('div.content')
+const content = document.querySelector('div.content');
+const commentArea = document.querySelector('div.commentarea');
 
 // fixes issue with some subs having threads that overlap the side panel
 const fixSiteTableWidth = () => {
@@ -9,6 +10,13 @@ const fixSiteTableWidth = () => {
   if (linklisting) {
     content.setAttribute('style', 'margin-right: 0 !important');
     linklisting.setAttribute('style', (
+      `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
+      `margin-right: ${sidePanel.offsetWidth + extraGap}px`
+      )
+    );
+  }
+  if (commentArea) {
+    commentArea.setAttribute('style', (
       `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
       `margin-right: ${sidePanel.offsetWidth + extraGap}px`
       )

@@ -5,6 +5,5 @@ body.wiki-page div.content {
 }
 
 body.wiki-page div.content * {
-  background: transparent !important;
   background-color: transparent !important;
 }
