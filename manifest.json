@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Reddit Dark Theme",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A very simple dark theme for the old reddit layout",
 
   "content_scripts": [
@@ -18,7 +18,7 @@
     }
   ],
 
-  "browser_action": {
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "index.html"
   },

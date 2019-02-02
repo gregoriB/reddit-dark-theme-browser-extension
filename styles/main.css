@@ -65,6 +65,11 @@ input[type=text] {
 }
 /*  */
 
+div.content {
+  min-width: 70% !important;
+  background: transparent !important;
+}
+
 div.content:before {
   background: transparent !important;
 }
@@ -141,7 +146,7 @@ div.modal-body {
 /* things */
 /* "thing" is what they call threads listed on a main sub page or the reddit home page */
 .thing {
-  width: 99% !important;
+  width: 98% !important;
   margin: .5rem 0 !important;
   background-color: var(--x-dark) !important;
   background: var(--x-dark) !important;
@@ -251,7 +256,7 @@ div.link {
   background-color: var(--dark) !important;
 }
 
-  /* div.side  and #siteTable have a relationship in javascript.  Don't alter this data without understanding how that works */
+  /* div.side, .linklisting, and #siteTable have a relationship in javascript.  Don't alter this data without understanding how that works */
   #siteTable {
     margin-left: 10px !important;
   }
