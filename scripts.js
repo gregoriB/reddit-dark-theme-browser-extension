@@ -1,34 +1,18 @@
-const sidePanel = document.querySelector('.side');
-const linklisting = document.querySelector('.linklisting');
-const wiki = document.querySelector('.wiki-page');
-const content = document.querySelector('div.content');
-const commentArea = document.querySelector('div.commentarea');
+const sidePanel = document.querySelector('div.side'),
+      body      = document.querySelector('body'),
+      content   = document.querySelector('div.content');
+
+const bodyDisplayType = window.getComputedStyle(body).getPropertyValue('display'),
+      extraGap = 20;
 
 // fixes issue with some subs having threads that overlap the side panel
 const fixSiteTableWidth = () => {
-  const extraGap = 15;
-  if (linklisting) {
-    content.setAttribute('style', 'margin-right: 0 !important');
-    linklisting.setAttribute('style', (
-      `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
-      `margin-right: ${sidePanel.offsetWidth + extraGap}px`
-      )
-    );
-  }
-  if (commentArea) {
-    commentArea.setAttribute('style', (
-      `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
-      `margin-right: ${sidePanel.offsetWidth + extraGap}px`
-      )
-    );
-  }
-  if (wiki) {
-      content.setAttribute('style', (
-      `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`,
-      `margin-right: ${sidePanel.offsetWidth + extraGap}px`
-      )
-    );
-  }
+  if (!content) return;
+
+  content.style = `max-width: ${window.innerWidth - sidePanel.offsetWidth}px !important`;
+  if (bodyDisplayType === 'flex') return;
+  
+  content.style.marginRight = `${sidePanel.offsetWidth + extraGap}px`;
 }
 
 fixSiteTableWidth();

@@ -10,6 +10,9 @@ div.comment.gilded * {
 }
 
 div.commentarea {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
   background-color: var(--dark) !important;
   background: var(--dark) !important;
 }
