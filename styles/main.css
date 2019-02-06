@@ -68,7 +68,7 @@ input[type=text] {
     display: block;
   }
   /*  */  
-  
+
 div.content:before {
   background: transparent !important;
 }
@@ -141,6 +141,7 @@ div#sr-header-area {
 }
 
 #header-bottom-right {
+  padding: 4px !important;
   background-color: #33333388 !important;  /* variable exception made for alpha */
 }
 
@@ -317,6 +318,20 @@ body div.side * {
 body div.side div.usertext-body ul {
   background-color: transparent !important;
 }
+
+  /* see r/fighters drop down menu for example */
+  div.usertext-body div.md blockquote {
+    background-color: var(--medium-dark) !important;
+  }
+
+  div.usertext-body div.md blockquote ul {
+    background-color: var(--medium-dark) !important;
+  }
+
+  div.usertext-body div.md blockquote li {
+    background-color: var(--medium-dark) !important;
+  }
+  /*  */
 
 body div.side .usertext-body ol {
   background-color: var(--dark) !important;
