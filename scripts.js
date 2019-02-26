@@ -15,6 +15,22 @@ const fixSiteTableWidth = () => {
   content.style.marginRight = `${sidePanel.offsetWidth + extraGap}px`;
 }
 
-fixSiteTableWidth();
+const debouncedResize = debounce(() => fixSiteTableWidth(), 250);
 
-window.addEventListener('resize', fixSiteTableWidth);
+function debounce(func, wait, immediate) {
+	let timeout;
+	return () => {
+    const context = this,
+          args    = arguments;
+          later   = () => {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (immediate && !timeout) func.apply(context, args);
+	};
+};
+
+window.addEventListener('load', fixSiteTableWidth)
+window.addEventListener('resize', debouncedResize);
