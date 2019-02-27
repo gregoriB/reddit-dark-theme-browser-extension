@@ -1,0 +1,11 @@
+div.search-result-group {
+  border: thin solid var(--medium-dark) !important;
+  background-color: var(--dark) !important;
+}
+
+#previoussearch {
+  padding: .5rem !important;
+  margin-top: 1rem !important;
+  border: thin solid var(--medium-dark) !important;
+  background-color: var(--dark) !important;
+}

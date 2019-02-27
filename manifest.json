@@ -13,7 +13,8 @@
         "/styles/main.css", 
         "/styles/video-player.css", 
         "/styles/comments.css",
-        "/styles/wiki.css"
+        "/styles/wiki.css",
+        "/styles/search.css"
       ],
       "js": ["scripts.js"]
     }
